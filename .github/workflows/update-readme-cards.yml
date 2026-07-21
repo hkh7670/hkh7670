@@ -13,14 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate stats card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          #options: username=hkh7670&show_icons=true&theme=transparent
-          options: username=hkh7670&show_icons=true&theme=transparent&hide=prs,issues
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Generate stats card
+      #   uses: stats-organization/github-readme-stats-action@v2
+      #   with:
+      #    card: stats
+      #    options: username=hkh7670&show_icons=true&theme=transparent
+      #    path: profile/stats.svg
+      #    token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
